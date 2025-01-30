@@ -17,6 +17,7 @@ const maximumProduct = function (nums) {
 };
 
 console.log(maximumProduct([1, 2, 3]));
+console.log(maximumProduct([1, 2, 3, 5, 6]));
 console.log(maximumProduct([1, 2, 3, 4]));
 console.log(maximumProduct([-1, -2, -3]));
 console.log(maximumProduct([3, 7, 5, 2, 1]));
