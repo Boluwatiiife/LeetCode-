@@ -25,10 +25,6 @@ const missingNumber = function (nums) {
     xor ^= num;
   }
   return xor;
-  //   const n = nums.length;
-  //   const expected_sum = (n * (n + 1)) / 2;
-  //   const actual_sum = nums.reduce((a, b) => a + b, 0);
-  //   return expected_sum - actual_sum;
 };
 
 console.log(missingNumber([3, 0, 1]));
