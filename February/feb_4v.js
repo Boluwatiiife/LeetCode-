@@ -7,3 +7,4 @@ const sortArrayByParity = function (nums) {
 console.log(sortArrayByParity([3, 1, 2, 4]));
 console.log(sortArrayByParity([0]));
 console.log(sortArrayByParity([0, 4, 5, 4, 5, 4, 5, 4]));
+console.log(sortArrayByParity([0, 4, 5, 45, 4, 5, 4]));
