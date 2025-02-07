@@ -5,8 +5,6 @@ const duplicateZeros = function (arr) {
     if (arr[i] === 0) {
       arr.splice(i + 1, 0, arr[i]);
       arr.pop();
-      //   break;
-      //   continue;
     }
   }
   return arr;
