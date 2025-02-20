@@ -14,7 +14,6 @@ const maxLengthBetweenEqualCharacters = function (s) {
   }
   if (temp.length < 1) return -1;
 
-  //   return temp;
   let anss = Math.max(...temp);
   return anss - 1;
 };
