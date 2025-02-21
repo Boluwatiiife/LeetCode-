@@ -1,4 +1,4 @@
-// 1672. Richest Customer Wealth
+// 1672. Richest Customer Wealth.
 
 const maximumWealth = function (accounts) {
   for (let i = 0; i < accounts.length; i++) {
