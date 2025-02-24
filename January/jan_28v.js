@@ -1,39 +1,22 @@
 // 594. Longest Harmonious Subsequence.
 
 const findLHS = function (nums) {
-  const sortt = nums.sort((a, b) => a - b);
-  return sortt;
-  const counttt = new Map();
-  //   return numm;
-  for (let num of sortt) {
-    counttt.set(num, (counttt.get(num) || 0) + 1);
+  let uniquee = new Set(nums);
+  let temp = [...uniquee];
+  temp = temp.sort((a, b) => a - b);
+  let count = new Map();
+  for (digit of nums) {
+    count.set(digit, (count.get(digit) || 0) + 1);
   }
-  //   return counttt;
-  let uniquee = [];
-  for (let [key, value] of counttt) {
-    uniquee.push(key);
-  }
-  return uniquee;
-  let arr = [];
-  for (let i = 0; i < sortt.length; i++) {
-    let temp = [];
-    if (!temp.includes(sortt[i])) {
-      temp.push(sortt[i]);
-    } else if (temp.includes(sortt[i]) && sortt[i] === sortt[i - 1]) {
-      temp.push(sortt[i]);
+
+  let resultt = [];
+  for (let i = 1; i < temp.length; i++) {
+    if (temp[i] - temp[i - 1] === 1) {
+      resultt.push(count.get(temp[i]) + count.get(temp[i - 1]));
     }
-    // arr.push(temp);
   }
-  //   arr.push(temp);
-
-  return arr;
-  //   return Math.max(...nums);
-  //   for (let i = 0; i < nums.length; i++) {
-  //     let maxx = Math.max(...nums);
-  //     let minn = Math.min(...nums);
-
-  //     // if()
-  //   }
+  if (resultt.length < 1) return 0;
+  return Math.max(...resultt);
 };
 
 console.log(findLHS([1, 3, 2, 2, 5, 2, 3, 7]));
