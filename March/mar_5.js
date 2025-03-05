@@ -14,11 +14,11 @@ const removeAnagrams = function (words) {
       i--;
     }
   }
-  let result = [];
+  let resultt = [];
   for ([one, two] of arr) {
-    result.push(one);
+    resultt.push(one);
   }
-  return result;
+  return resultt;
 };
 
 console.log(removeAnagrams(["abba", "baba", "bbaa", "cd", "cd"]));
