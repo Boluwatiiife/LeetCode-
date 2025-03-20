@@ -30,12 +30,7 @@ const minChanges = function (n, k) {
   onee = onee.join("");
   twoo = twoo.join("");
 
-  //   return count;
   return onee === twoo ? count : -1;
-  //   return nn;
-  return [one, two];
-
-  return [one.length, two.length];
 };
 
 console.log(minChanges(13, 4));
