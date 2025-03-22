@@ -16,3 +16,4 @@ const canAliceWin = function (n) {
 console.log(canAliceWin(12));
 console.log(canAliceWin(1));
 console.log(canAliceWin(27));
+console.log(canAliceWin(25));
