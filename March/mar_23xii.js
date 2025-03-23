@@ -2,11 +2,11 @@
 
 const largestInteger = function (nums, k) {
   let arr = new Map();
-  let count = 0;
+  let countt = 0;
 
   for (let i = 0; i < nums.length - k + 1; i++) {
     let temp = nums.slice(i, k + i);
-    count++;
+    countt++;
     for (no of temp) {
       arr.set(no, (arr.get(no) || 0) + 1);
     }
@@ -17,7 +17,7 @@ const largestInteger = function (nums, k) {
       maxx = Math.max(maxx, no);
     }
   }
-  return count > 1 ? maxx : Math.max(...nums);
+  return countt > 1 ? maxx : Math.max(...nums);
 };
 
 console.log(largestInteger([3, 9, 2, 1, 7], 3));
