@@ -1,10 +1,7 @@
 // 2033. Minimum Operations to Make a Uni-Value Grid
 
 const minOperations = function (grid, x) {
-  let nums = [];
-  for (dd of grid) {
-    nums.push(...dd);
-  }
+  let nums = grid.flat();
 
   nums = nums.sort((a, b) => a - b);
   let n = Math.floor(nums.length / 2);
