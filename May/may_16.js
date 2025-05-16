@@ -18,7 +18,6 @@ const maxWidthRamp = function (nums) {
       max = Math.max(max, j - i);
     }
   }
-
   return max;
 };
 
