@@ -1,7 +1,7 @@
 // 1023. Camelcase Matching
 
 const camelMatch = function (queries, pattern) {
-  function checkCheck(one, two) {
+  function checkCheckk(one, two) {
     const n = one.length;
     const m = two.length;
 
@@ -17,7 +17,7 @@ const camelMatch = function (queries, pattern) {
     }
     return j === m;
   }
-  return queries.map((temp) => checkCheck(temp, pattern));
+  return queries.map((temp) => checkCheckk(temp, pattern));
 };
 
 console.log(
