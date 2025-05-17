@@ -1,23 +1,22 @@
 // 1023. Camelcase Matching
 
 const camelMatch = function (queries, pattern) {
-  function checkCheckk(one, two) {
-    const n = one.length;
-    const m = two.length;
-
+  function checkCheck(query, patt) {
+    const n = query.length;
+    const m = patt.length;
     let i = 0,
       j = 0;
+
     while (i < n) {
-      if (j < m && one[i] === two[j]) {
+      if (j < m && query[i] === patt[j]) {
         i++;
         j++;
-      } else if (one[i] >= "a" && one[i] <= "z") {
-        i++;
-      } else return false;
+      } else if (query[i] >= "a" && query[i] <= "z") i++;
+      else return false;
     }
     return j === m;
   }
-  return queries.map((temp) => checkCheckk(temp, pattern));
+  return queries.map((temp) => checkCheck(temp, pattern));
 };
 
 console.log(
