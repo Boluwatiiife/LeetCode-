@@ -3,13 +3,13 @@
 const matchPlayersAndTrainers = function (players, trainers) {
   players.sort((a, b) => a - b);
   trainers.sort((a, b) => a - b);
-  let count = 0;
+  let countt = 0;
   let i = 0,
     j = 0;
 
   while (i < players.length && j < trainers.length) {
     if (players[i] <= trainers[j]) {
-      count++;
+      countt++;
       i++;
       j++;
     } else {
@@ -17,7 +17,7 @@ const matchPlayersAndTrainers = function (players, trainers) {
     }
   }
 
-  return count;
+  return countt;
 };
 
 console.log(matchPlayersAndTrainers([4, 7, 9], [8, 2, 5, 8]));
