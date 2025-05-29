@@ -9,7 +9,7 @@ const beautifulIndices = function (s, a, b, k) {
     while (i < n) {
       if (word[i] === check[0] && word.slice(i, i + m) === check) {
         arr.push(i);
-        i += m;
+        i++;
       } else {
         i++;
       }
@@ -18,21 +18,15 @@ const beautifulIndices = function (s, a, b, k) {
   }
   const one = indexxx(s, a);
   const two = indexxx(s, b);
-  //   return [one, two];
-  let i = 0,
-    j = 0;
   let arr = [];
 
-  while (i < one.length && j < two.length) {
-    while (Math.abs(one[i] - two[j]) <= k) {
-      arr.push(one[i]);
-      i++;
-      //   j++;
+  for (const no of one) {
+    for (const bb of two) {
+      if (Math.abs(no - bb) <= k) {
+        arr.push(no);
+        break;
+      }
     }
-    //  else {
-    // i++;
-    j++;
-    // }
   }
   return arr;
 };
@@ -53,3 +47,4 @@ console.log(beautifulIndices("ocmm", "m", "oc", 3));
 // );
 
 console.log(beautifulIndices("frtzggff", "g", "f", 1));
+console.log(beautifulIndices("ababababazzabababb", "aba", "bb", 10));
