@@ -19,3 +19,4 @@ const longestArithSeqLength = function (nums) {
 console.log(longestArithSeqLength([3, 6, 9, 12]));
 console.log(longestArithSeqLength([9, 4, 7, 2, 10]));
 console.log(longestArithSeqLength([20, 1, 15, 3, 10, 5, 8]));
+console.log(longestArithSeqLength([1, 15, 3, 10, 5, 8]));
