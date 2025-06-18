@@ -1,15 +1,15 @@
 // 2554. Maximum Number of Integers to Choose From a Range I
 
 const maxCount = function (banned, n, maxSum) {
-  let set = new Set();
+  let sett = new Set();
   for (let no of banned) {
-    if (no <= n) set.add(no);
+    if (no <= n) sett.add(no);
   }
   let sum = 0;
   let count = 0;
 
   for (let i = 1; i <= n; i++) {
-    if (!set.has(i)) {
+    if (!sett.has(i)) {
       sum += i;
       count++;
     }
