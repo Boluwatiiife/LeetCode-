@@ -15,21 +15,25 @@ const solveQueries = function (nums, queries) {
     let dex = queries[j];
     let no = nums[queries[j]];
     let temp = unique[no];
+    // return temp;
+
     const len = temp.length;
     for (let i = 0; i < len; i++) {
       let use = 0;
       let circle = Infinity;
-      if (temp[i] === dex) continue;
       use = Math.abs(temp[i] - dex);
-      //   if (dex > temp[i]) {
-      circle = m - dex + temp[i];
-      //   }
+      if (temp[i] === dex) use = Infinity;
+
+      if (dex > temp[i]) {
+        circle = m - dex + temp[i];
+      } else circle = m + dex - temp[i];
+      if (temp[i] === dex) circle = Infinity;
+
       ans[j] = Math.min(ans[j], use, circle);
     }
   }
   const result = ans.map((xx) => (xx === Infinity ? -1 : xx));
 
-  //   return unique;
   return result;
 };
 
