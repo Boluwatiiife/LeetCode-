@@ -23,3 +23,4 @@ console.log(isIsomorphic("ofo", "bar"));
 console.log(isIsomorphic("paper", "title"));
 console.log(isIsomorphic("bbbaaaba", "aaabbbba")); // false
 console.log(isIsomorphic("badc", "baba")); // false
+console.log(isIsomorphic("badc", "faba")); // false
