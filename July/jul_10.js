@@ -4,26 +4,33 @@ const maxFreeTime = function (eventTime, startTime, endTime) {
   let spaces = [];
   let time = [];
   let use = 0;
+  let maxSpace = -Infinity;
   for (let i = 0; i < startTime.length; i++) {
     time.push(endTime[i] - startTime[i]);
-    spaces.push(startTime[i] - use);
+    const temp = startTime[i] - use;
+    spaces.push(temp);
+    maxSpace = Math.max(maxSpace, temp);
     use = endTime[i];
   }
   spaces.push(eventTime - endTime[endTime.length - 1]);
+  maxSpace = Math.max(maxSpace, eventTime - endTime[endTime.length - 1]);
 
   let ans = 0;
 
   for (let i = 0; i < spaces.length - 1; i++) {
-    let temp = [...spaces];
-    temp[i] = 0;
-    temp[i + 1] = 0;
-    // return [spaces, temp];
-    let sum = spaces[i] + spaces[i + 1];
-    let great = temp.filter((xx) => xx >= time[i]);
-    if (great.length > 0) {
+    const one = spaces[i];
+    const two = spaces[i + 1];
+    let sum = one + two;
+
+    spaces[i] = 0;
+    spaces[i + 1] = 0;
+    const great = spaces.some((num) => num >= time[i]);
+    if (great) {
       sum += time[i];
     }
     ans = Math.max(ans, sum);
+    spaces[i] = one;
+    spaces[i + 1] = two;
   }
 
   return ans;
