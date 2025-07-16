@@ -33,3 +33,10 @@ console.log(
     [0, 0],
   ])
 );
+console.log(
+  oddCells(2, 2, [
+    [1, 1],
+    [0, 0],
+    [0, 1],
+  ])
+);
