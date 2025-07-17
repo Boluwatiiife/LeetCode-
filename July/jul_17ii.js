@@ -51,5 +51,16 @@ const daysBetweenDates = function (date1, date2) {
   return Math.abs(datee(date1) - datee(date2));
 };
 
+const daysBetweenDatess = function (date1, date2) {
+  const d1 = new Date(date1);
+  const d2 = new Date(date2);
+
+  const diff_in_Ms = Math.abs(d1 - d2);
+
+  return diff_in_Ms / (1000 * 60 * 60 * 24);
+};
+
 console.log(daysBetweenDates("2019-06-29", "2019-06-30"));
 console.log(daysBetweenDates("2020-01-15", "2019-12-31"));
+console.log(daysBetweenDatess("2019-06-29", "2019-06-30"));
+console.log(daysBetweenDatess("2020-01-15", "2019-12-31"));
