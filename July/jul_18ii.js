@@ -31,3 +31,26 @@ const isPathCrossing = function (path) {
 console.log(isPathCrossing("NES"));
 console.log(isPathCrossing("NESWW"));
 console.log(isPathCrossing("ENNNNNNNNNNNEEEEEEEEEESSSSSSSSSS"));
+
+const isPathCrossingg = function (path) {
+  let sett = new Set();
+  let x = 0,
+    y = 0;
+
+  sett.add(`${x},${y}`);
+
+  for (const temp of path) {
+    if (temp === "N") y++;
+    if (temp === "S") y--;
+    if (temp === "E") x++;
+    if (temp === "W") x--;
+
+    if (sett.has(`${x},${y}`)) return true;
+    sett.add(`${x},${y}`);
+  }
+  return false;
+};
+
+console.log(isPathCrossingg("NES"));
+console.log(isPathCrossingg("NESWW"));
+console.log(isPathCrossingg("ENNNNNNNNNNNEEEEEEEEEESSSSSSSSSS"));
