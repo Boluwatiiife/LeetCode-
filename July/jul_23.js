@@ -1,49 +1,33 @@
 // 1717. Maximum Score From Removing Substrings
 
 const maximumGain = function (s, x, y) {
-  let one = Math.max(x, y) === x ? "ab" : "ba";
-  let two = one === "ab" ? "ba" : "ab";
-  const num = Math.max(x, y);
-
-  function stackstacker() {
+  function stackstacker(word, one, two, point) {
     let stack = [];
     let ans = 0;
 
-    for (const char of s) {
-      if (
-        stack.length > 0 &&
-        stack[stack.length - 1] === one[0] &&
-        char === one[1]
-      ) {
+    for (const char of word) {
+      if (stack.length > 0 && stack[stack.length - 1] === one && char === two) {
         stack.pop();
-        ans += num;
+        ans += point;
       } else {
         stack.push(char);
       }
     }
-    s = stack.join("");
-    return ans;
+    return { newString: stack.join(""), ans };
   }
-  function stackstackerr() {
-    let stack = [];
-    let ans = 0;
+  let ans = 0;
 
-    for (const char of s) {
-      if (
-        stack.length > 0 &&
-        stack[stack.length - 1] === two[0] &&
-        char === two[1]
-      ) {
-        stack.pop();
-        ans += Math.min(x, y);
-      } else {
-        stack.push(char);
-      }
-    }
-    return ans;
+  if (x >= y) {
+    const onee = stackstacker(s, "a", "b", x);
+    const twoo = stackstacker(onee.newString, "b", "a", y);
+    ans = onee.ans + twoo.ans;
+  } else {
+    const onee = stackstacker(s, "b", "a", y);
+    const twoo = stackstacker(onee.newString, "a", "b", x);
+    ans = onee.ans + twoo.ans;
   }
 
-  return stackstacker() + stackstackerr();
+  return ans;
 };
 
 console.log(maximumGain("cdbcbbaaabab", 4, 5));
