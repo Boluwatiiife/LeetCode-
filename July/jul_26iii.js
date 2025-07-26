@@ -11,3 +11,4 @@ const divisorGame = function (n) {
 
 console.log(divisorGame(2));
 console.log(divisorGame(3));
+console.log(divisorGame(7));
