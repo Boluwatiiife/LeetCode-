@@ -20,3 +20,4 @@ const cellsInRange = function (s) {
 console.log(cellsInRange("K1:L2"));
 console.log(cellsInRange("A1:F1"));
 console.log(cellsInRange("G4:K4"));
+console.log(cellsInRange("R7:S8"));
