@@ -105,3 +105,11 @@ console.log(
     [0, 3],
   ])
 );
+console.log(
+  winningPlayerCountt(3, [
+    [0, 8],
+    [0, 3],
+    [1, 3],
+    [1, 3],
+  ])
+);
