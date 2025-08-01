@@ -21,3 +21,4 @@ const generate = function (numRows) {
 
 console.log(generate(5));
 console.log(generate(1));
+console.log(generate(13));
