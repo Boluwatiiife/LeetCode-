@@ -57,3 +57,51 @@ console.log(
     [0, 3],
   ])
 );
+const winningPlayerCountt = function (n, pick) {
+  let arr = Array.from({ length: n }, () => Array(11).fill(0));
+
+  for (const [player, ball] of pick) {
+    arr[player][ball]++;
+  }
+
+  let ans = 0;
+
+  for (let i = 0; i < n; i++) {
+    if (arr[i].some((val) => val > i)) ans++;
+  }
+
+  return ans;
+};
+
+console.log(
+  winningPlayerCountt(4, [
+    [0, 0],
+    [1, 0],
+    [1, 0],
+    [2, 1],
+    [2, 1],
+    [2, 0],
+  ])
+);
+console.log(
+  winningPlayerCountt(5, [
+    [1, 1],
+    [1, 2],
+    [1, 3],
+    [1, 4],
+  ])
+);
+console.log(
+  winningPlayerCountt(5, [
+    [1, 1],
+    [2, 4],
+    [2, 4],
+    [2, 4],
+  ])
+);
+console.log(
+  winningPlayerCountt(2, [
+    [0, 8],
+    [0, 3],
+  ])
+);
