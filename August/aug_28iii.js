@@ -60,3 +60,10 @@ console.log(
     [7, 8, 9],
   ])
 );
+console.log(
+  maxSummRectangle([
+    [5, -4, -3, 4],
+    [-3, -4, 4, 5],
+    [5, 1, 5, -4],
+  ])
+);
