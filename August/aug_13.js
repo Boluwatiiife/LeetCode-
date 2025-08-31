@@ -24,5 +24,6 @@ console.log(
 );
 console.log(maximumCoins([[1, 10, 3]], 2));
 console.log(maximumCoins([[30, 49, 12]], 28));
+console.log(maximumCoins([[30, 49, 12]], 28));
 console.log(maximumCoins([[1, 1000000000, 1000]], 1000000000));
 console.log(maximumCoins([[1, 1000000000, 1000]], 1000000000));
