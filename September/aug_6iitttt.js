@@ -19,3 +19,4 @@ const maxSlidingWindow = function (nums, k) {
 
 console.log(maxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3));
 console.log(maxSlidingWindow([1], 1));
+console.log(maxSlidingWindow([1, 2, 3], 2));

@@ -20,3 +20,4 @@ const longestSubsequence = function (word1, word2) {
 };
 
 console.log(longestSubsequence("abcdaf", "acbcf")); // abcf
+console.log(longestSubsequence("abcdaf", "acbcfee")); // abcf

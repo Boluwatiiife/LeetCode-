@@ -5,7 +5,7 @@ const maxMatrixSum = function (matrix) {
   let grid = [];
 
   //   matrix.forEach((arr) => {
-  for (const arr of matrix) {
+  for (let arr of matrix) {
     let dex = [];
     for (let i = 1; i < arr.length; i++) {
       if (
@@ -59,6 +59,13 @@ console.log(
   maxMatrixSum([
     [1, -0, 1],
     [2, 1, 3],
+    [3, 2, 2],
+  ])
+);
+console.log(
+  maxMatrixSum([
+    [1, -0, 1],
+    [2, 5, 3],
     [3, 2, 2],
   ])
 );
