@@ -29,3 +29,4 @@ console.log(rob([2, 3, 2]));
 console.log(rob([1, 2, 3, 1]));
 console.log(rob([1, 2, 3]));
 console.log(rob([0]));
+console.log(rob([3,4,6,1,1]));
