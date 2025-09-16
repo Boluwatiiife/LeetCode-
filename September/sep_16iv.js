@@ -20,3 +20,4 @@ const maxRotateFunction = function (nums) {
 
 console.log(maxRotateFunction([4, 3, 2, 6]));
 console.log(maxRotateFunction([100]));
+console.log(maxRotateFunction([4, 6, 12, 11, 1]));
