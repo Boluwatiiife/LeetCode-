@@ -18,3 +18,10 @@ console.log(
     [1, 1, 0, 0],
   ])
 );
+console.log(
+  largest1BorderedSquare([
+    [1, 1, 0, 0],
+    [1, 1, 0, 0],
+    [1, 1, 0, 0],
+  ])
+);
