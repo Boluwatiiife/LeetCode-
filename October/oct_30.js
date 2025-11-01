@@ -23,6 +23,7 @@ const majorityFrequencyGroup = function (s) {
 
 console.log(majorityFrequencyGroup("aaabbbccdddde"));
 console.log(majorityFrequencyGroup("abcd"));
+console.log(majorityFrequencyGroup("abcdd"));
 console.log(majorityFrequencyGroup("pfpfgi"));
 console.log(majorityFrequencyGroup("pfpfgidd"));
 console.log(
