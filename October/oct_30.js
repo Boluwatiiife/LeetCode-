@@ -26,6 +26,7 @@ console.log(majorityFrequencyGroup("abcd"));
 console.log(majorityFrequencyGroup("abcdd"));
 console.log(majorityFrequencyGroup("pfpfgi"));
 console.log(majorityFrequencyGroup("pfpfgidd"));
+console.log(majorityFrequencyGroup("pfpfgidddd"));
 console.log(
   majorityFrequencyGroup(
     "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
