@@ -24,3 +24,4 @@ console.log(backspaceCompare("ab#c", "ad#c"));
 console.log(backspaceCompare("ab##", "c#d#"));
 console.log(backspaceCompare("a#c", "b"));
 console.log(backspaceCompare("a#c", "bd"));
+console.log(backspaceCompare("a#c", "bddd"));
