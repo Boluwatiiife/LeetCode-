@@ -22,3 +22,5 @@ console.log(uniquePaths(3, 2));
 console.log(uniquePaths(12, 19));
 console.log(uniquePaths(19, 12));
 console.log(uniquePaths(19, 24));
+console.log(uniquePaths(19, 324));
+console.log(uniquePaths(19, 233));
