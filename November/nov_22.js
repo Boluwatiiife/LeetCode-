@@ -25,3 +25,4 @@ console.log(uniquePaths(19, 24));
 console.log(uniquePaths(19, 324));
 console.log(uniquePaths(19, 233));
 console.log(uniquePaths(19, 23344));
+console.log(uniquePaths(19, 2334334));
