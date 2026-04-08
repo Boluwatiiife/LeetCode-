@@ -16,6 +16,7 @@ const rob = function (nums) {
 };
 
 console.log(rob([1, 2, 3, 1]));
+console.log(rob([1, 2, 3, 4, 6, 12, 6, 1]));
 console.log(rob([2, 7, 9, 3, 1]));
 console.log(rob([2, 1, 1, 2])); // 4
 console.log(rob([1, 3, 1, 3, 100])); // 103

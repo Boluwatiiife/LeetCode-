@@ -34,6 +34,7 @@ console.log(repeateddd([1, 2, 3, 3]));
 console.log(repeateddd([2, 1, 2, 5, 3, 2]));
 console.log(repeateddd([5, 1, 5, 2, 5, 3, 5, 4]));
 
+// best solution!
 const testingg = function (nums) {
   for (let i = 0; i < nums.length; i++) {
     for (let j = 0; j < nums.length; j++) {

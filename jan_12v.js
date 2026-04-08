@@ -24,10 +24,11 @@ const isSameTree = function (p, q) {
   //     }
   //   }
   let xxx = together.length - p.length;
+  let yyy=together.length-q.length
 
-  // for(let x=0;x<xxx;x++){
-  //     for(let y=)
-  // }
+  for(let x=0;x<xxx;x++){
+      for(let y=yyy;y<)
+  }
   return together;
   //   return xxx;
 };

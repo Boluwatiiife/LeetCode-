@@ -1,22 +1,28 @@
 // 680 Valid Palindrome II
 
 const validPalindrome = function (s) {
-  const strr = s.split("");
-  return strr;
-  let reves = strr.reverse().join("");
-  // if (rever === s) {
-  //   return true;
-  // }
-  return strr;
-  for (let i = 0; i < strr.length; i++) {
-    // let reves = strr.reverse().join("");
-    if (reves === strr.join("")) {
+  let arr = s.split("");
+
+  let dd = arr.join("");
+  let xxx = arr.reverse();
+  // return [dd, xxx.join("")];
+  if (dd === xxx.join("")) return true;
+
+  for (let i = 0; i < arr.length; i++) {
+    let char = arr[i];
+    arr.splice(i, 1);
+    let temp = arr.join("");
+    let rever = arr.reverse();
+    let joinn = rever.join("");
+
+    arr = temp.split("");
+    arr.splice(i, 0, char);
+
+    if (temp === joinn) {
       return true;
     } else {
-      strr.splice(i, 1);
-      i++;
+      continue;
     }
-    // return reves;
   }
   return false;
 };

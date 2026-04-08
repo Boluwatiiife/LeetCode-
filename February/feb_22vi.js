@@ -16,10 +16,8 @@ const countBalls = function (lowLimit, highLimit) {
   for (num of resultt) {
     count.set(num, (count.get(num) || 0) + 1);
   }
-  //   return count;
   const timess = [...count.values()];
   return Math.max(...timess);
-  return resultt;
 };
 
 console.log(countBalls(1, 10));

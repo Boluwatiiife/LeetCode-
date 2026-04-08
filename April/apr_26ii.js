@@ -5,7 +5,6 @@ const numOfSubarrays = function (arr, k, threshold) {
   let left = 0;
   let sum = 0;
   for (let i = 0; i < k; i++) sum += arr[i];
-  //   return sum;
   let count = 0;
   if (sum / k >= threshold) count++;
 

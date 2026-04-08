@@ -13,7 +13,6 @@ const maxAscendingSum = function (nums) {
     }
   }
   return maxx;
-  // return Math.max(maxx, currr);
 };
 
 console.log(maxAscendingSum([10, 20, 30, 5, 10, 50]));

@@ -22,8 +22,6 @@ const findValidPair = function (s) {
   }
 
   return "";
-  return freqq;
-  return nums;
 };
 
 console.log(findValidPair("2523533"));

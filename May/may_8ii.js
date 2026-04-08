@@ -21,3 +21,4 @@ const findLongestWord = function (s, dictionary) {
 
 console.log(findLongestWord("abpcplea", ["ale", "apple", "monkey", "plea"]));
 console.log(findLongestWord("abpcplea", ["a", "b", "c"]));
+console.log(findLongestWord("abpcplea", ["b", "c", "a"]));
