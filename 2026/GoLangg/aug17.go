@@ -1,5 +1,5 @@
 // 4. Longest Common Prefix
-package main
+package leetcode
 
 import "fmt"
 

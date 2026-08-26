@@ -1,5 +1,5 @@
 // 3345. Smallest Divisible Digit Product I
-package main
+package leetcode
 
 import (
 	"fmt"

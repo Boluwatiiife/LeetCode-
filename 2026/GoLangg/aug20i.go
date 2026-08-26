@@ -1,5 +1,5 @@
 // 3069. Distribute Elements Into Two Arrays I
-package main
+package leetcode
 
 import "fmt"
 

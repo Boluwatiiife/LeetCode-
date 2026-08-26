@@ -1,6 +1,6 @@
 // 3718. Smallest Missing Multiple of K
 
-package main
+package leetcode
 
 import (
 	"fmt"

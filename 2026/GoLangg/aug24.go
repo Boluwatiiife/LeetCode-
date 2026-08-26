@@ -1,5 +1,5 @@
 // 20. Valid Parentheses
-package main
+package leetcode
 
 import "fmt"
 

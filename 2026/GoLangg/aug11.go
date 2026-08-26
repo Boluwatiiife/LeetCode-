@@ -1,6 +1,6 @@
 // 2996. Smallest Missing Integer Greater Than Sequential Prefix Sum
 
-package main
+package leetcode
 
 import (
 	"fmt"
