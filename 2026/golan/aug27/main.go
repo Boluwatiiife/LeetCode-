@@ -8,20 +8,7 @@ import (
 )
 
 func strStr(haystack string, needle string) any {
-	hay := strings.Split(haystack, "")
-	need := strings.Split(needle, "")
-
-	for i := 0; i < len(hay); i++ {
-		if i+len(need) <= len(hay) {
-			arr := hay[i : len(need)+i]
-			temp := strings.Join(arr, "")
-			if temp == needle {
-				return i
-			}
-		}
-	}
-
-	return -1
+	return strings.Index(haystack, needle)
 }
 
 func main() {
