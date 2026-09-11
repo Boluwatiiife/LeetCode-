@@ -7,31 +7,26 @@ func isUgly(n int) bool {
 	if n <= 0 {
 		return false
 	}
-	if n == 7 {
-		return false
-	}
-	if n == 9 {
-		return true
-	}
-	// for no := 5; no*no <= n; no += 6 {
-	for i := 7; i <= n; i += 2 {
-		if i%3 != 0 && isPrime(i) && n%i == 0 {
+
+	temp := n
+	for {
+		if temp%2 == 0 {
+			temp /= 2
+		}
+		if temp%3 == 0 {
+			temp /= 3
+		}
+		if temp%5 == 0 {
+			temp /= 5
+		}
+		if temp == 1 {
+			return true
+		}
+		if temp%2 != 0 && temp%3 != 0 && temp%5 != 0 {
 			return false
 		}
 	}
-	// }
-	return true
-}
-func isPrime(no int) bool {
-	// if no%3 == 0 {
-	// 	return false
-	// }
-	for i := 5; i*i <= no; i += 6 {
-		if no%i == 0 || no%(i+2) == 0 {
-			return false
-		}
-	}
-	return true
+
 }
 
 func main() {
