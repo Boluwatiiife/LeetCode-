@@ -29,4 +29,5 @@ func main() {
 	fmt.Println(isRectangleOverlap([]int{2, 17, 6, 20}, []int{3, 8, 6, 20}))
 	fmt.Println(isRectangleOverlap([]int{5, 15, 8, 18}, []int{0, 3, 7, 9}))
 	fmt.Println(isRectangleOverlap([]int{4, 0, 6, 6}, []int{-5, -3, 4, 2}))
+	fmt.Println(isRectangleOverlap([]int{5, 0, 6, 6}, []int{-5, -3, 4, 2}))
 }
