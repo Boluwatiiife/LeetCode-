@@ -4,20 +4,20 @@ package main
 import "fmt"
 
 func isPerfectSquare(num int) bool {
-	if num == 1 {
-		return true
-	}
-	no := num / 2
+	left, right := 0, num+1
 
-	for no > 0 {
-		if no*no == num {
-			return true
+	for left < right {
+		mid := left + (right-left)/2
+
+		if mid*mid >= num {
+			right = mid
+		} else {
+			left = mid + 1
 		}
-		no--
 	}
-	return false
-}
 
+	return left*left == num
+}
 func main() {
 	fmt.Println(isPerfectSquare(16))
 	fmt.Println(isPerfectSquare(14))
