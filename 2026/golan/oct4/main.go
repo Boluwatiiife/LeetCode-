@@ -42,6 +42,7 @@ func main() {
 	fmt.Println(checkValidString("(*)"))
 	fmt.Println(checkValidString("(*))"))
 	fmt.Println(checkValidString("("))
+	fmt.Println(checkValidString("(()*"))
 	fmt.Println(checkValidString("(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())"))
 	fmt.Println(checkValidString("((((()(()()()*()(((((*)()*(**(())))))(())()())(((())())())))))))(((((())*)))()))(()((*()*(*)))(*)()"))
 }
